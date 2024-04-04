@@ -1,3 +1,75 @@
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
 /* CSS Resets */
 * {
     box-sizing: border-box;
@@ -14,6 +86,7 @@ body {
     background-color: #333;
     color: rgb(235, 235, 235);
     transition: all 2s;
+    font-family: "Roboto", sans-serif;
 }
 
 body.switch {
@@ -23,10 +96,10 @@ body.switch {
 
 #container {
     position: relative;
-    width: 100%;
-    max-width: 1366px;
+    width: 90%;
+    /* max-width: 1366px; */
     /* make sure the columns don't get too small and text stays readable */
-    min-width: 900px;
+    /* min-width: 900px; */
     margin: 1em auto;
     padding-top: 2em;
 }
@@ -35,7 +108,7 @@ header {
     margin: 0 auto 2em auto;
 }
 
-#banner {
+/* #banner {
     position: relative;
     display: flex;
     width: 1100px;
@@ -52,18 +125,18 @@ header {
     background-color: #333;
     color: rgb(235, 235, 235);
     transition: all 2s;
-}
+} */
 
 main {
     display: flex;
     justify-content: space-evenly;
     margin: 1em auto;
+    flex-direction: column;
 }
 
 main section {
     flex: 1;
-    border: 1px rgb(235, 235, 235) dashed;
-    margin: 0 .25em;
+    margin: 0 .15em;
     padding: 1em;
 }
 
