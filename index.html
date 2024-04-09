@@ -1,116 +1,147 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Home is...DES 157B!</title>
+  <meta charset="UTF-8">
+  <title>Home is...DES 157B!</title>
 
-    <!-- Normalize CSS for browser compatability -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+  <!-- Normalize CSS for browser compatability -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
 
-    <!-- Add link to any google fonts used here -->
+  <!-- Add link to any google fonts used here -->
 
-    <!-- My Styles -->
-    <link href="styles.css" rel="stylesheet">
+  <!-- My Styles -->
+  <link href="styles.css" rel="stylesheet">
 
-    <!-- Meta tag for mobile support -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Meta tag for mobile support -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- My Script -->
-    <script src="script.js" defer></script>
+  <!-- My Script -->
+  <script src="script.js" defer></script>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
 
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
-
 <body>
 
-    <div id="container">
+    <button><i class="fas fa-random"></i></button>
+    
+    <main>
+      
+      <header>
+        <h1>Josh Gerhardt <i id="circle" class="fas fa-circle"></i></h1>
 
-        <header>
+        <h3>DES 157B</h2>
+        <h3>Interactive Media III</h3>
+        <h3>Spring 2024</h3>
+      </header>
 
-            <h1>Your name here.</h1>
+      <section>
+        <nav>
+          <ul>
 
-            <h2>DES 157B - Interactive Media III - (term, year & section)</h2>
+              <!-- dropdown1 -->
+                <input type="checkbox" class="checkbox01" id="av01" />
+                <label for="av01" id='avall'>
+                    Mini-studios <i class="fas fa-sort-down"></i>
+                </label>
+                    <div id='avall01'>
+                        <li>
+                  <a href='#'>blockbuster video <i id="link" class="fas fa-level-up-alt"></i></a>
+                </li>
+                        <li>
+                  <a href='#'>check yourself <i id="link" class="fas fa-level-up-alt"></i></a>
+                </li>
+                        <li>
+                  <a href='#'>library liberty <i id="link" class="fas fa-level-up-alt"></i></a>
+                </li>
+              </div>
 
-            <!--this is for the interactive banner-->
-            <!-- <div id="banner">
-                <h3>This is my banner!</h3>
-            </div> -->
+              <!-- dropdown2 -->
+                <input type="checkbox" class="checkbox02" id="av02" />
+                <label for="av02" id='avall'>
+                    Toolkit <i class="fas fa-sort-down"></i>
+                </label>
+                    <div id='avall02'>
+                        <li>
+                  <a href='#'>Assignment 1 <i id="link" class="fas fa-level-up-alt"></i></a>
+                </li>
+                        <li>
+                  <a href='#'>Assignment 2 <i id="link" class="fas fa-level-up-alt"></i></a>
+                </li>
+                        <li>
+                  <a href='#'>Assignment 3 <i id="link" class="fas fa-level-up-alt"></i></a>
+                </li>
+              </div>
 
-            <button>switch</button>
+              <!-- dropdown3 -->
+                <input type="checkbox" class="checkbox03" id="av03" />
+                <label for="av03" id='avall'>
+                    Research <i class="fas fa-sort-down"></i>
+                </label>
+                    <div id='avall03'>
+                        <li>
+                  <a href='#'>Assignment 1 <i id="link" class="fas fa-level-up-alt"></i></a>
+                </li>
+                        <li>
+                  <a href='#'>Assignment 2 <i id="link" class="fas fa-level-up-alt"></i></a>
+                </li>
+                        <li>
+                  <a href='#'>Assignment 3 <i id="link" class="fas fa-level-up-alt"></i></a>
+                </li>
+              </div>
 
-        </header>
+              <!-- dropdown4 -->
+                <input type="checkbox" class="checkbox04" id="av04" />
+                <label for="av04" id='avall'>
+                    Development <i class="fas fa-sort-down"></i>
+                </label>
+                    <div id='avall04'>
+                <li>
+                  <a href='#'>Assignment 1 <i id="link" class="fas fa-level-up-alt"></i></a>
+                </li>
+                <li>
+                  <a href='#'>Assignment 2 <i id="link" class="fas fa-level-up-alt"></i></a>
+                </li>
+                <li>
+                  <a href='#'>Assignment 3 <i id="link" class="fas fa-level-up-alt"></i></a>
+                </li>
+              </div>
 
-        <main>
+              <!-- dropdown5 -->
+                <input type="checkbox" class="checkbox05" id="av05" />
+                <label for="av05" id='avall'>
+                    Cap Stone <i class="fas fa-sort-down"></i>
+                </label>
+                    <div id='avall05'>
+                        <li>
+                  <a href='#'>Case Study <i id="link" class="fas fa-level-up-alt"></i></a>
+                </li>
+                        <li>
+                  <a href='#'>Project <i id="link" class="fas fa-level-up-alt"></i></a>
+                </li>
+              </div>
+            
+            <!-- Unused indivial links -->
 
-            <section id="projects">
+            <!-- <li>
+                <a href='#'>Research</a>
+            </li>
+            <li>
+                <a href='#'>Development</a>
+            </li> -->
 
-                <h3>ministudios</h3>
-                <nav>
-                    <ol>
-                        <li><a href="#">blockbuster video</a></li>
-                        <li><a href="#">check yourself</a></li>
-                        <li><a href="#">library liberty</a></li>
-                    </ol>
-                </nav>
-                <h3>toolkit</h3>
-                <nav>
-                    <ol>
-                        <li><a href="#">Toolkit Assignment 1</a></li>
-                        <li><a href="#">Toolkit Assignment 2</a></li>
-                        <li><a href="#">Toolkit Assignment 3</a></li>
-                    </ol>
-                </nav>
+          </ul>
+        </nav>
+      </section>
+    </main>
 
-            </section>
-
-            <section id="research">
-                <h3>research</h3>
-                <nav>
-                    <ul>
-                        <li><a href="#">Research Assignment 1</a></li>
-                        <li><a href="#">Research Assignment 2</a></li>
-                        <li><a href="#">Research Assignment 3</a></li>
-                        <li><a href="#">Research Assignment 4</a></li>
-                        <li><a href="#">Research Assignment 5</a></li>
-                        <li><a href="#">Research Assignment 6</a></li>
-                    </ul>
-                </nav>
-
-            </section>
-
-            <section id="development">
-                <h3>development</h3>
-                <nav>
-                    <ul>
-                        <li><a href="#">Development Assignment 1</a></li>
-                        <li><a href="#">Development Assignment 2</a></li>
-                        <li><a href="#">Development Assignment 3</a></li>
-                        <li><a href="#">Development Assignment 4</a></li>
-                        <li><a href="#">Development Assignment 5</a></li>
-                        <li><a href="#">Development Assignment 6</a></li>
-                    </ul>
-                </nav>
-            </section>
-
-            <section id="capstone">
-                <h3>capstone</h3>
-                <nav>
-                    <ul>
-                        <li><a href="#">case study</a></li>
-                        <li><a href="#">project</a></li>
-                    </ul>
-                </nav>
-            </section>
-
-        </main>
-
-    </div>
 
 </body>
-
 </html>
