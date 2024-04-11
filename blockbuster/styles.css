@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: antiquewhite;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#poem p {
+    position: absolute;
+    padding: 1em;
+    font-size: 2em;
+    background-color: black;
+    transition: all 2.5s;
+}
+
+#line1 {
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#line2 {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#line3 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fa-expand {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 36px;
+    color: orange;
+}
+
+.fa-expand:hover {
+    cursor: pointer;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.showing {
+    opacity: 1;
+}
+
+nav {
+    position: absolute;
+    z-index: 1;
+    transition: all 2.5s;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fa-dove {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 36px;
+    color: antiquewhite;
+    transform: translate(-50%, -50%);
+    animation: bird 2s infinite alternate ease-in-out;
+    }
+    
+@keyframes bird {
+    0% {
+        opacity: .5;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: .5;
+        transform: scale(1.5);
+    }
+    }
