@@ -72,13 +72,17 @@ header {
     font-family: "DM Mono", monospace;
 }
 
+p, h3 {
+    padding: 20px;
+    width: 90%;
+}
+
 h1 {
     font-weight: 500;
 }
 
 h3 {
     font-weight: 550;
-    line-height: .5em;
 }
 
 #circle {
@@ -107,6 +111,10 @@ button {
     border: 1px solid transparent;
     border-radius: 2px;
     transition: .3s;
+}
+
+img {
+    padding: 20px;
 }
 
 button:hover {
@@ -139,87 +147,4 @@ section.switch {
 
 section.switch a{
     color: black;
-}
-
-nav {
-    margin-top: 300px;
-    padding: 15px;
-}
-
-nav ul {
-    position: relative;
-    top:0; left:0;
-    float:left;
-    width:250px; height:100%;
-    list-style-type: none;
-    margin: 0px; padding: 0px;
-    overflow: hidden;
-}
-nav li {
-    float: left;
-    width:100%;
-    height:32px;
-    line-height: 18px;
-    font-weight: bold;
-}
-nav li a {
-    display: block;
-    font-size:15px;
-    text-align: left;
-    margin:0px;
-    padding: 8px 14px;
-    text-decoration: none;
-}
-
-    #avall {
-        float: left;
-        cursor:pointer;
-        width:100%;
-        font-size:18px;
-        text-align: left;
-        font-weight: 550;
-        line-height: 18px;
-        padding: 8px;
-        text-decoration: none;
-    }
-
-    #avall01 li, #avall02 li, #avall03 li, #avall04 li, #avall05 li, #avall06 li {
-        font-weight: normal;
-    }
-    #avall01, #avall02, #avall03, #avall04, #avall05, #avall06 {
-        display:none;
-    }
-    .checkbox01, .checkbox02, .checkbox03, .checkbox04, .checkbox05, .checkbox06  {
-        display:none;
-    }
-        .checkbox01:checked ~ #avall01 {
-            display:block;
-        }
-        .checkbox02:checked ~ #avall02 {
-            display:block;
-        }
-        .checkbox03:checked ~ #avall03 {
-            display:block;
-        }
-        .checkbox04:checked ~ #avall04 {
-            display:block;
-        }
-        .checkbox05:checked ~ #avall05 {
-            display:block;
-        }
-        .checkbox05:checked ~ #avall06 {
-            display:block;
-        }
-
-@media screen and (min-width: 450px) {
-
-    main {
-        margin-left: 40%;
-    }
-
-    nav {
-        margin-top: 0px;
-    }
-
-
 }

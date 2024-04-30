@@ -4,7 +4,7 @@
     const button = document.querySelector('button');
     const body = document.querySelector('body');
     const sections = document.querySelectorAll('section');
-    const nav = document.querySelectorAll('nav');
+
     let mode = 'dark';
 
     button.addEventListener('click', function() {
