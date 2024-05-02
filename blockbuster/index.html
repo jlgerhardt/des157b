@@ -1,149 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Normalize CSS for browser compatability -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <!-- Normalize CSS for browser compatability -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
 
-  <!-- My Styles -->
-  <link href="styles.css" rel="stylesheet">
+    <!-- My Styles -->
+    <link rel="stylesheet" href="styles.css" />
 
-  <!-- Meta tag for mobile support -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- My Script -->
+    <script src="script.js" defer></script>
 
-  <!-- My Script -->
-  <script src="script.js" defer></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="/images/favicon.png">
-
-  <title>DES157B</title>
-
+    <title>Blockbuster</title>
 </head>
+
 <body>
 
-    <button><i class="fas fa-random"></i></button>
-    
-    <main>
-      
-      <header>
-        <h1>Josh Gerhardt<i id="circle" class="fas fa-circle"></i></h1>
+    <video id="myVideo" poster="images/full-logo.png" muted autoplay loop playsinline>
 
-        <h3>DES 157B</h3>
-        <h3>Interactive Media III</h3>
-        <h3>Spring 2024</h3>
-      </header>
+        <source src="media/interview-short.webm" type="video/webm">
+        <source src="media/interview-short.mp4" type="video/mp4">
 
-      <section>
-        <nav>
-          <ul>
+        <p>Your browser doesn't support HTML5 video. Here is a <a href="media/interview-short.mp4">link to the video</a>
+            instead.</p>
+    </video>
 
-              <!-- dropdown1 -->
-                <input type="checkbox" class="checkbox01" id="av01" />
-                <label for="av01" id='avall'>
-                    Mini-studios <i class="fas fa-sort-down"></i>
-                </label>
-                    <div id='avall01'>
-                        <li>
-                  <a href='blockbuster/index.html'>blockbuster video <i id="link" class="fas fa-level-up-alt"></i></a>
-                </li>
-                        <li>
-                  <a href='#'>check yourself <i id="link" class="fas fa-level-up-alt"></i></a>
-                </li>
-                        <li>
-                  <a href='#'>library liberty <i id="link" class="fas fa-level-up-alt"></i></a>
-                </li>
-              </div>
+    <!-- add the loading icon here -->
+    <img id="loading" src="images/logo.png" alt="logo" width="200">
 
-              <!-- dropdown2 -->
-                <input type="checkbox" class="checkbox02" id="av02" />
-                <label for="av02" id='avall'>
-                    Toolkit <i class="fas fa-sort-down"></i>
-                </label>
-                    <div id='avall02'>
-                        <li>
-                  <a href='#'>Assignment 1 <i id="link" class="fas fa-level-up-alt"></i></a>
-                </li>
-                        <li>
-                  <a href='#'>Assignment 2 <i id="link" class="fas fa-level-up-alt"></i></a>
-                </li>
-                        <li>
-                  <a href='#'>Assignment 3 <i id="link" class="fas fa-level-up-alt"></i></a>
-                </li>
-              </div>
+    <!-- add lines of text here -->
+    <section id="poem">
+        <img id="line1" class="hidden" src="images/full-logo.png" alt="fulllogo" width="900">
+        <p id="line2" class="hidden">05.25.2024</p>
+        <p id="line3" class="hidden">1. riptide <br>
+            2. never find out <br>
+            3. menthol</p>
+        <p id="line4" class="hidden">these things were never meant to last.</p>
+    </section>
 
-              <!-- dropdown3 -->
-                <input type="checkbox" class="checkbox03" id="av03" />
-                <label for="av03" id='avall'>
-                    Research <i class="fas fa-sort-down"></i>
-                </label>
-                    <div id='avall03'>
-                        <li>
-                  <a href='#'>Assignment 1 <i id="link" class="fas fa-level-up-alt"></i></a>
-                </li>
-                        <li>
-                  <a href='#'>Assignment 2 <i id="link" class="fas fa-level-up-alt"></i></a>
-                </li>
-                        <li>
-                  <a href='#'>Assignment 3 <i id="link" class="fas fa-level-up-alt"></i></a>
-                </li>
-              </div>
-
-              <!-- dropdown4 -->
-                <input type="checkbox" class="checkbox04" id="av04" />
-                <label for="av04" id='avall'>
-                    Development <i class="fas fa-sort-down"></i>
-                </label>
-                    <div id='avall04'>
-                <li>
-                  <a href='#'>Assignment 1 <i id="link" class="fas fa-level-up-alt"></i></a>
-                </li>
-                <li>
-                  <a href='#'>Assignment 2 <i id="link" class="fas fa-level-up-alt"></i></a>
-                </li>
-                <li>
-                  <a href='#'>Assignment 3 <i id="link" class="fas fa-level-up-alt"></i></a>
-                </li>
-              </div>
-
-              <!-- dropdown5 -->
-                <input type="checkbox" class="checkbox05" id="av05" />
-                <label for="av05" id='avall'>
-                    Cap Stone <i class="fas fa-sort-down"></i>
-                </label>
-                    <div id='avall05'>
-                        <li>
-                  <a href='#'>Case Study <i id="link" class="fas fa-level-up-alt"></i></a>
-                </li>
-                        <li>
-                  <a href='#'>Project <i id="link" class="fas fa-level-up-alt"></i></a>
-                </li>
-              </div>
-            
-            <!-- Unused indivial links -->
-
-            <!-- <li>
-                <a href='#'>Research</a>
-            </li>
-            <li>
-                <a href='#'>Development</a>
-            </li> -->
-
-          </ul>
-        </nav>
-      </section>
-    </main>
-
+    <!-- add navigation -->
+    <nav class="hidden">
+        <a href="https://gsthse.com/"><i class="fas fa-external-link-alt"></i></a>
+        <a href="https://www.youtube.com/@GUESTHOUSE-gsthse"><i class="fab fa-youtube"></i></a>
+        <a href="https://music.apple.com/us/artist/guesthouse/1711526885"><i class="fas fa-music"></i></a>
+        <a href="https://open.spotify.com/artist/3UDU7BhIvoKNN0Kih4cy5z?si=ZPzlrXYrT6G58EaDfqLApg"><i class="fab fa-spotify"></i></a>
+    </nav>
 
 </body>
+
 </html>
