@@ -1,0 +1,36 @@
+{
+	"1": {
+	"day": "Monday",
+	"mileage": "8.23 Miles",
+	"route": "route1"
+},
+	"2": {
+	"day": "Tuesday",
+	"mileage": "6.67 Miles",
+	"route": "route2"
+},
+  "3": {
+	"day": "Wednesday",
+	"mileage": "9.89 Miles",
+	"route": "route3"
+},
+  "4": {
+	"day": "Thursday",
+	"mileage": "4.04 Miles",
+	"route": "route4"
+},
+  "5": {
+	"day": "Friday",
+	"mileage": "7.08 Miles",
+	"route": "route5"
+},
+  "6": {
+	"day": "Saturday",
+	"mileage": "8.06 Miles",
+	"route": "route1"
+},
+  "7": {
+	"day": "Sunday",
+	"mileage": "4.04 Miles",
+	"route": "route4"
+}}

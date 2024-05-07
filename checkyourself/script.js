@@ -2,7 +2,7 @@
     'use strict';
 
     async function getData(){
-        const watched = await fetch('data/watched.json');
+        const watched = await fetch('data/runs.json');
         const data = await watched.json();
         const values = Object.values(data);
         console.log(values);
@@ -20,9 +20,9 @@
     function outputHTML(data){
         const display = document.querySelector("#display")
         display.innerHTML = 
-        `
+        `<p id="day">${data.day}</p>
         <p id="mile">${data.mileage}</p>
-         <p id="day">${data.day}</p>`;
+        <img src="images/${data.route}.png" alt="route">`;
     }
     
     getData();
