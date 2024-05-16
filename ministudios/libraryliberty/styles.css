@@ -1,0 +1,98 @@
+/********** Bill's resets **********/
+
+h1, h2, h3, p, ul, ol {
+	margin: 0;
+	padding: 0;
+}
+
+nav ul, nav ol { 
+	list-style-type: none; 
+}
+
+img { 
+	max-width:100%; 
+}
+
+a { 
+	text-decoration:none;
+}
+
+* { 
+	box-sizing: border-box; 
+}
+
+/************** End CSS RESET ****************/
+
+
+
+/************* Typography ************/
+
+.flexslider {
+	border: none;
+	margin: 0 20px;
+	border-radius: 0;
+	width: 40%;
+}
+
+.flex-control-paging li a.flex-active {
+	background: #464646;
+}
+
+/**************** Media Queries ****************/
+
+@media only screen and (min-width: 600px) {
+	
+	main { 
+		display: flex; 
+	}
+
+	.column { 
+		flex: 1; 
+	}
+	
+}
+
+@media only screen and (min-width: 1000px) {
+	
+	#page {
+		/* max-width: 1000px; */
+		margin: auto;
+	}
+
+}
+
+.fp-overflow {
+	height: 52%;
+}
+
+.flexslider {
+	margin: auto;
+}
+
+.fp-watermark { 
+	display: none;
+}
+
+.flex-control-paging li a.flex-active {
+	background: black;
+}
+
+
+.logo {
+	margin: auto;
+	display: block;
+	padding-bottom: 30px;
+}
+
+.s1 {
+	background: url(images/joshgh.gif);
+	background-size: cover;
+}
+
+.flexslider {
+	width: 25%;
+}
+
+
+
+
