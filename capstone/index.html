@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+	<!-- Normalize CSS -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    	<link href="flexslider.css" rel="stylesheet">
+
+	<!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+	
+	<!-- My CSS -->
+	<link href="styles.css" rel="stylesheet">
+
+	<!-- My Script file -->
+	<script src="script.js" defer></script>
+    
+</head>
+<body>
+
+    <div id="clock"></div>
+
+    <div class="map" id="observablehq-chart-2f89f8f9"></div>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+    <script type="module">
+    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+    import define from "https://api.observablehq.com/d/a4f56aee7c678f0b@190.js?v=4";
+    new Runtime().module(define, name => {
+      if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-2f89f8f9"));
+    });
+    </script>
+</body>
+</html>

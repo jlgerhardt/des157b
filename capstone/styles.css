@@ -1,0 +1,54 @@
+/********** Bill's resets **********/
+
+h1, h2, h3, p, ul, ol {
+	margin: 0;
+	padding: 0;
+}
+
+nav ul, nav ol { 
+	list-style-type: none; 
+}
+
+img { 
+	max-width:100%; 
+}
+
+a { 
+	text-decoration:none;
+}
+
+* { 
+	box-sizing: border-box; 
+}
+
+.reddit-mono-light {
+  font-family: "Reddit Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    font-family: "Reddit Mono", monospace;
+    background-color: #F1FFFB;
+}
+
+.map {
+    position: relative;
+    top: 100px;
+    width: 50%;
+    margin: auto;
+}
+
+#clock {
+    position: relative;
+    top: 50px;
+    font-size: 50px;
+    color: #272727;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+
+
