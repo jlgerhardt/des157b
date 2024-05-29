@@ -12,6 +12,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+
+    <!-- D3 Library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
 	
 	<!-- My CSS -->
 	<link href="styles.css" rel="stylesheet">
@@ -29,17 +32,26 @@
 
     </main>
 
+    <div id="content">
 
+        <section>
+            <p>Single Person's Average Income: 38,266/yr</p>
+            <p>Family of Four Average Income: 38,266/yr</p>
 
-    <div id="observablehq-chart-267b61bb"></div>
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+            <a class="continue" id="link1" href="#">NEXT</a>
+        </section>
+
+    </div>
+
+    <div class="notThere" id="observablehq-chart-0997c195"></div>
+
     <script type="module">
     import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-    import define from "https://api.observablehq.com/d/a4f56aee7c678f0b@207.js?v=4";
+    import define from "https://api.observablehq.com/d/a4f56aee7c678f0b@212.js?v=4";
     new Runtime().module(define, name => {
-      if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-267b61bb"));
+      if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-0997c195"));
     });
     </script>
+
 </body>
 </html>

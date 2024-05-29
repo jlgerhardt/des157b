@@ -1,6 +1,7 @@
 ( function (){
     'use strict';
 
+    // CODE FOR DISPLAYING TIME
     setInterval(function() {
         // Just move your date creation inside the interval function
         var today = new Date();
@@ -13,29 +14,32 @@
 
       }, 1000);
 
-      // d3.select(window).on("keydown", function() {
-      //   if (d3.event.key === "Escape") {
-      //     reset();
-      //   }
-      // });
 
-          // Get references to the link elements
+
+    // CODE FOR HIDING AND SHOWING CONTENT
     const link1 = document.getElementById("link1");
-    const link2 = document.getElementById("link2");
 
-    // Add click event listeners to the links
     link1.addEventListener("click", function(event) {
-      event.preventDefault(); // Prevent default link behavior (e.g., page reload)
-
-      // Replace content with new HTML
-      document.getElementById("content").innerHTML = "<p>This is content for Link 1.</p>";
+        event.preventDefault();
+        document.getElementById("content").innerHTML = 
+        `<section>
+        <p>Enter Your Income:</p> <br>
+        <input type="text" id="#" name="#" value="Income">
+        <a id="link2" href="#"> NEXT </a>
+        </section>
+        `;
     });
 
-    link2.addEventListener("click", function(event) {
-      event.preventDefault(); // Prevent default link behavior (e.g., page reload)
-
-      // Replace content with new HTML
-      document.getElementById("content").innerHTML = "<p>This is content for Link 2.</p>";
+    document.getElementById("content").addEventListener("click", function(event) {
+        if (event.target && event.target.id === "link2") {
+            event.preventDefault();
+            document.getElementById("content").innerHTML = `
+            <section class="info">
+            <p>page1</p> <br>
+            </section>`;
+            document.getElementById("observablehq-chart-0997c195").classList.remove('notThere');
+            document.getElementById("observablehq-chart-0997c195").classList.add('There');
+        }
     });
 
     
