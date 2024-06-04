@@ -1,0 +1,92 @@
+/********** Bill's resets **********/
+
+h1, h2, h3, p, ul, ol {
+	margin: 0;
+	padding: 0;
+}
+
+nav ul, nav ol { 
+	list-style-type: none; 
+}
+
+img { 
+	max-width:100%; 
+}
+
+a { 
+	text-decoration:none;
+}
+
+* { 
+	box-sizing: border-box; 
+}
+
+.reddit-mono-light {
+  font-family: "Reddit Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    font-family: "Reddit Mono", monospace;
+    background-color: #F1FFFB;
+}
+
+.There {
+    opacity: 1;
+    margin-top: 100px;
+}
+
+.notThere {
+    opacity: 0;
+    width: 10px;
+
+}
+
+header {
+    position: relative;
+    top: 100px;
+    font-size: 25pt;
+    color: #272727;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+svg {
+    margin: auto;
+    display: block;
+    /* border: 1px solid black; */
+}
+
+section {
+    position: relative;
+    top: 200px;
+    font-size: 25pt;
+    color: #272727;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+.continue {
+    background-color: red;
+    padding: 5px;
+    position: relative;
+    top: 100px;
+    display: block;
+    width: 200px;
+    margin: auto;
+    color: white;
+    border-radius: 5px;
+    font-size: 19pt;
+}
+
+.label {
+    position: relative;
+    left: 400px;
+    bottom: 50px;
+}
+
+
