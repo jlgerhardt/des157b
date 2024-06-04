@@ -2,17 +2,17 @@
     'use strict';
 
     // CODE FOR DISPLAYING TIME
-    setInterval(function() {
-        // Just move your date creation inside the interval function
-        var today = new Date();
-        // var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
-        var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-        // var dateTime = date + " " + time; // Add the time to the date string
+    // setInterval(function() {
+    //     // Just move your date creation inside the interval function
+    //     var today = new Date();
+    //     // var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+    //     var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    //     // var dateTime = date + " " + time; // Add the time to the date string
       
-        // Now it will take the current date and put it in all html elements
-        document.getElementById('clock').innerHTML = time;
+    //     // Now it will take the current date and put it in all html elements
+    //     document.getElementById('clock').innerHTML = time;
 
-      }, 1000);
+    //   }, 1000);
 
 
 
@@ -46,11 +46,50 @@
         }
     });
 
-    // This function will run when the window finishes loading
-    window.onload = function() {
-      alert('You are a graduating UC Davis student with a projected income out of college at $30,000-$50,000. You want to find out more about where you could live comfortably in the US and are recommended this website from a friend. Enter your income and find out which states suit you financial situation.');
-    };
+    // async function getData(){
+    //     const statesData = await fetch('states/runs.json');
+    //     const data = await statesData.json();
+    //     const values = Object.values(data);
+    //     console.log(values);
+    
+    //     const links = document.querySelectorAll('main nav a');
+    //     links.forEach(function(eachLink){
+    //         eachLink.addEventListener('click', function(event){
+    //             event.preventDefault();
+    //             const states = event.target.getAttribute('href');
+    //             outputHTML(values[states]);
+    //         } );
+    //     });  
+    // }
 
+    // function outputHTML(data){
+    //     const display = document.querySelector("#display")
+    //     display.innerHTML = 
+    //     `<p id="day">${data.state}</p>
+    //     <p id="mile">${data.mileage}</p>
+    //     <img src="images/${data.route}.png" alt="route">`;
+    // }
+    
+    // getData();
+
+
+    /* function fillState(state) {
+        const allTitles = document.querySelectorAll("title");
+        console.log(allTitles);
+        for(const thisTitle of allTitles) {
+            if(thisTitle.textContent == state) {
+                const parentPath = thisTitle.parentElement;
+                parentPath.setAttribute("fill", "red");
+
+            }
+        }
+    }
+
+    fillState('Alabama');
+ */
+    window.addEventListener('load', function(){
+        console.log(document.querySelector('svg'));
+    });
     
 
     
