@@ -1,0 +1,81 @@
+{
+"1": {
+	"state": "Alabama",
+	"mileage": "8.23 Miles",
+	"route": "route1"
+},
+"2": {
+	"state": "Alaska",
+	"mileage": "6.67 Miles",
+	"route": "route2"
+},
+"3": {
+	"state": "Arkansas",
+	"mileage": "9.89 Miles",
+	"route": "route3"
+},
+"4": {
+	"state": "California",
+	"mileage": "4.04 Miles",
+	"route": "route4"
+},
+"5": {
+	"state": "Colorado",
+	"mileage": "7.08 Miles",
+	"route": "route5"
+},
+"6": {
+	"state": "Connecticut",
+	"mileage": "8.06 Miles",
+	"route": "route1"
+},
+"7": {
+	"state": "Delaware",
+	"mileage": "4.04 Miles",
+	"route": "route4"
+},
+"8": {
+	"state": "Delaware",
+	"mileage": "4.04 Miles",
+	"route": "route4"
+},
+"9": {
+	"state": "Florida",
+	"mileage": "4.04 Miles",
+	"route": "route4"
+},
+"10": {
+	"state": "Georgia",
+	"mileage": "4.04 Miles",
+	"route": "route4"
+},
+"11": {
+	"state": "Hawaii",
+	"mileage": "4.04 Miles",
+	"route": "route4"
+},
+"12": {
+	"state": "Idaho",
+	"mileage": "4.04 Miles",
+	"route": "route4"
+},
+"13": {
+	"state": "Illinois",
+	"mileage": "4.04 Miles",
+	"route": "route4"
+},
+"14": {
+	"state": "Indiana",
+	"mileage": "4.04 Miles",
+	"route": "route4"
+},
+"15": {
+	"state": "Iowa",
+	"mileage": "4.04 Miles",
+	"route": "route4"
+}
+
+
+
+
+}
