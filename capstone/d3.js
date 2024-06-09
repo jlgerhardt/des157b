@@ -129,13 +129,15 @@
 
 /*---------------------------------------------------------WORKING CODE-----------------------------------------------------------*/
 
+let statesToColor = [];
+let updateStateColors;
+
 //Wait for the DOM content to be fully loaded before executing any JavaScript
 document.addEventListener("DOMContentLoaded", function() {
 
   //Define the dimensions of the SVG container
   const width = 975;
   const height = 610;
-
 
   let states;
 
@@ -153,7 +155,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
       // Function to reset zoom and state highlighting
     function reset() {
-      states.transition().style('fill', null);   // Reset the fill style of all states to null
+      // states.transition().style('fill', null);   // Reset the fill style of all states to null
 
         // Perform a transition on the SVG to reset the zoom and pan
       svg.transition().duration(750).call(
@@ -181,6 +183,18 @@ document.addEventListener("DOMContentLoaded", function() {
  
   //Append a group element to the SVG for containing map elements
   const g = svg.append('g'); // This creates a new <g> element within the SVG for grouping map elements
+
+    // Define the array of states to change the color
+    // const statesToColor = ['California', 'Texas', 'New York']; // Example states
+
+    // Function to update the fill color of specific states
+    updateStateColors = function() {
+      states.each(function(d) {
+        if (statesToColor.includes(d.properties.name)) {
+          d3.select(this).style('fill', 'red'); // Change the fill color
+        }
+      });
+    }
 
   //Load GeoJSON data asynchronously
   d3.json('data/states-albers-10m.json').then(data => {
@@ -215,11 +229,15 @@ document.addEventListener("DOMContentLoaded", function() {
     // Call the zoom behavior on the SVG
     svg.call(zoom);
 
+    updateStateColors();
+
     function clicked(event, d) {
       const [[x0, y0], [x1, y1]] = path.bounds(d);
       event.stopPropagation();
-      states.transition().style('fill', null);
-      d3.select(this).transition().style('fill', '#2192FC');
+      console.log(`State clicked: ${d.properties.name}`);
+      displayStateInfo(d.properties.name);
+      // states.transition().style('fill', null);
+      d3.select(this).transition().style('fill', 'red');
       svg.transition().duration(750).call(
         zoom.transform,
         d3.zoomIdentity
@@ -230,10 +248,43 @@ document.addEventListener("DOMContentLoaded", function() {
       );
     }
 
+
+  //-------------------------ESCAPE PRESS EVENT RESET-------------------------
+
     window.addEventListener('keydown', function(event) {
       if (event.key === 'Escape') {
         reset();
       }
     });
   });
-});
+
+  //-------------------------DISPLAY STATES DATA ON CLICK-------------------------
+
+    d3.json('data/states.json').then(data => {
+      stateData = data.reduce((acc, state) => {
+          acc[state.name] = state;
+          return acc;
+      }, {});
+  });
+
+  function displayStateInfo(stateName) {
+      const state = stateData[stateName];
+      if (state) {
+          const infoDiv = document.getElementById('state-info');
+          infoDiv.innerHTML = `
+              <p>
+              <strong>Information about ${state.name}:</strong><br>
+              Capital: ${state.capital}<br>
+              Population: ${state.population.toLocaleString()}<br>
+              Area: ${state.area.toLocaleString()} sq mi<br>
+              Total Cost of Living: ${state.total_cost_of_living}<br>
+              
+              
+              
+              </p>
+          `;
+      } else {
+          console.log(`No data available for ${stateName}`);
+      }
+  }
+  });

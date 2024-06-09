@@ -1,97 +1,92 @@
 ( function (){
     'use strict';
 
-    // CODE FOR DISPLAYING TIME
-    setInterval(function() {
-        // Just move your date creation inside the interval function
-        var today = new Date();
-        // var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
-        var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-        // var dateTime = date + " " + time; // Add the time to the date string
-      
-        // Now it will take the current date and put it in all html elements
-        document.getElementById('clock').innerHTML = time;
+    //-------------------------CODE FOR DATE AND TIME DISPLAY-------------------------
 
-      }, 1000);
+    // Function to pad single digits with leading zeros
+    function padToTwoDigits(number) {
+        return number.toString().padStart(2, '0');
+    }
 
+    // Function to format the date with two digits for day, month, and year
+    function formatDate(date) {
+        const day = padToTwoDigits(date.getDate());
+        const month = padToTwoDigits(date.getMonth() + 1); // Months are zero-based
+        const year = padToTwoDigits(date.getFullYear() % 100); // Get last two digits of the year
+        return `${month}.${day}.${year}`;
+    }
 
+    // Function to format the time with two digits for hours, minutes, and seconds
+    function formatTime(date) {
+        const hours = padToTwoDigits(date.getHours());
+        const minutes = padToTwoDigits(date.getMinutes());
+        const seconds = padToTwoDigits(date.getSeconds());
+        return `${hours}:${minutes}:${seconds}`;
+    }
 
-    // CODE FOR HIDING AND SHOWING CONTENT
+    // Function to display the current date and time
+    function displayDateTime() {
+        const currentDate = new Date();
+        const formattedDate = formatDate(currentDate);
+        const formattedTime = formatTime(currentDate);
+        document.getElementById('currentDate').textContent = formattedDate;
+        document.getElementById('currentTime').textContent = formattedTime;
+    }
+
+    // Update the time every second
+    setInterval(displayDateTime, 1000);
+
+    // Call the displayDateTime function when the page loads
+    window.onload = displayDateTime;
+
+    //-------------------------CODE FOR HIDING AND SHOWING CONTENT-------------------------
     const link1 = document.getElementById("link1");
 
     link1.addEventListener("click", function(event) {
         event.preventDefault();
-        document.getElementById("header").innerHTML = `<h1> Where can YOU live comfortably? </h1> `;
+        document.getElementById("bigText").innerHTML = `<h1> Where can YOU live comfortably? </h1> `;
         document.getElementById("content").innerHTML = 
         `<section>
-        <p>Enter Your Projected Income Range:</p> <br>
-        <input type="text" id="#" name="#" value="Income">
-        <a class= "continue" id="link2" href="#"> NEXT </a>
+        <form>
+        <label for="cars">Choose an income range:</label>
+        <select name="income" id="income">
+          <option value="veryLow">veryLow</option>
+          <option value="low">low</option>
+          <option value="medium">medium</option>
+          <option value="high">high</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Submit">
+        </form>
         </section>
         `;
-    });
-
-    document.getElementById("content").addEventListener("click", function(event) {
-        if (event.target && event.target.id === "link2") {
+        document.querySelector('form').addEventListener('submit', function(event){
             event.preventDefault();
-            document.getElementById("header").innerHTML = `
-            <div class="wrapper">
-            <p>Click on the states for more information. <br> Press ESC to reset zoom.</p>
-            <p>Your Income Range: <br> <b>$30,000-$50,000</p>
+            const choice = document.querySelector('#income').value;
+            if (choice == 'veryLow') {
+                statesToColor = ['California', 'Florida'];
+                updateStateColors();
+                console.log(statesToColor);
+            } else if (choice == 'low') {
+                statesToColor.push('Alabama');
+                updateStateColors();
+            } else if (choice == 'medium') {
+                statesToColor.push('Utah');
+                updateStateColors();
+            } else {
+                statesToColor.push('Colorado');
+                updateStateColors();
+            }
+            document.getElementById("bigText").innerHTML = `
+            <div>
+            <p>Click on the states for more information. <br> Press ESC to reset zoom. <br> Highlighted states are where you can live comfortably.</p>
+            <p>Your Income Range: <br> <b>$30,000-$50,000</b></p>
             </div>
-`;
+            `;
             document.getElementById("content").innerHTML = ``;
             document.getElementById("observablehq-chart-0997c195").classList.remove('notThere');
             document.getElementById("observablehq-chart-0997c195").classList.add('There');
-        }
+        });
     });
-
-    // async function getData(){
-    //     const statesData = await fetch('states/runs.json');
-    //     const data = await statesData.json();
-    //     const values = Object.values(data);
-    //     console.log(values);
-    
-    //     const links = document.querySelectorAll('main nav a');
-    //     links.forEach(function(eachLink){
-    //         eachLink.addEventListener('click', function(event){
-    //             event.preventDefault();
-    //             const states = event.target.getAttribute('href');
-    //             outputHTML(values[states]);
-    //         } );
-    //     });  
-    // }
-
-    // function outputHTML(data){
-    //     const display = document.querySelector("#display")
-    //     display.innerHTML = 
-    //     `<p id="day">${data.state}</p>
-    //     <p id="mile">${data.mileage}</p>
-    //     <img src="images/${data.route}.png" alt="route">`;
-    // }
-    
-    // getData();
-
-
-    /* function fillState(state) {
-        const allTitles = document.querySelectorAll("title");
-        console.log(allTitles);
-        for(const thisTitle of allTitles) {
-            if(thisTitle.textContent == state) {
-                const parentPath = thisTitle.parentElement;
-                parentPath.setAttribute("fill", "red");
-
-            }
-        }
-    }
-
-    fillState('Alabama');
- */
-    window.addEventListener('load', function(){
-        console.log(document.querySelector('svg'));
-    });
-    
-
-    
 
 })();

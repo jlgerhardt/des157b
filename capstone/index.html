@@ -11,13 +11,11 @@
 	<!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
 
     <!-- D3 Library -->
-
     <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js" defer></script>
-
 
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
@@ -25,34 +23,45 @@
 	<!-- My CSS -->
 	<link href="styles.css" rel="stylesheet">
 
-	<!-- My Script file -->
-    <script src="script.js" defer></script>
-
+	<!-- D3 Script file -->
     <script src="d3.js" defer></script>
 
-    
+    <!-- My Script file -->
+    <script src="script.js" defer></script>
+
 </head>
 <body>
 
-    <header id="header">
-
-        <div id="clock"></div>
-        <h1>Current Average Cost of Living in the US Interactive Map</h1>
-
+    <header>
+        <div id="dateDisplay"><span id="currentDate"></span></div>
+        <div id="clock"><span id="currentTime"></span></div>
     </header>
+
+    <div id="bigText">
+        <h1 class="title">US COST OF LIVING INTERACTIVE MAP</h1>
+    </div>
 
     <div id="content">
 
         <section>
-            <p>Single Person's Average Income: 38,266/yr</p>
-            <p>Family of Four Average Income: 38,266/yr</p>
+            <div class="information">
+                <p>The rising cost of living remains a prominent concern across the U.S., with surveys showing that Americans rank inflation as one of the top problems facing the country.</p>
+                <p>As prices continue to soar in nearly every aspect of life—from groceries to transportation to housing—it seems sticky inflation has a hand in everything</p>
+            </div>
+
+            <div class="stats">
+                <p>Single Person's Average Income: 38,266/yr</p>
+                <p>Family of Four Average Income: 85,139/yr</p>
+            </div>
 
             <a class="continue" id="link1" href="#">continue <i class="fas fa-arrow-right"></i></a>
         </section>
 
     </div>
 
+    <div id="state-info"></div>
     <div class="notThere" id="observablehq-chart-0997c195">
+
     </div>
 
 </body>

@@ -1,81 +1,502 @@
-{
-"1": {
-	"state": "Alabama",
-	"mileage": "8.23 Miles",
-	"route": "route1"
-},
-"2": {
-	"state": "Alaska",
-	"mileage": "6.67 Miles",
-	"route": "route2"
-},
-"3": {
-	"state": "Arkansas",
-	"mileage": "9.89 Miles",
-	"route": "route3"
-},
-"4": {
-	"state": "California",
-	"mileage": "4.04 Miles",
-	"route": "route4"
-},
-"5": {
-	"state": "Colorado",
-	"mileage": "7.08 Miles",
-	"route": "route5"
-},
-"6": {
-	"state": "Connecticut",
-	"mileage": "8.06 Miles",
-	"route": "route1"
-},
-"7": {
-	"state": "Delaware",
-	"mileage": "4.04 Miles",
-	"route": "route4"
-},
-"8": {
-	"state": "Delaware",
-	"mileage": "4.04 Miles",
-	"route": "route4"
-},
-"9": {
-	"state": "Florida",
-	"mileage": "4.04 Miles",
-	"route": "route4"
-},
-"10": {
-	"state": "Georgia",
-	"mileage": "4.04 Miles",
-	"route": "route4"
-},
-"11": {
-	"state": "Hawaii",
-	"mileage": "4.04 Miles",
-	"route": "route4"
-},
-"12": {
-	"state": "Idaho",
-	"mileage": "4.04 Miles",
-	"route": "route4"
-},
-"13": {
-	"state": "Illinois",
-	"mileage": "4.04 Miles",
-	"route": "route4"
-},
-"14": {
-	"state": "Indiana",
-	"mileage": "4.04 Miles",
-	"route": "route4"
-},
-"15": {
-	"state": "Iowa",
-	"mileage": "4.04 Miles",
-	"route": "route4"
-}
-
-
-
-
-}
+[
+	{
+			"name": "Alabama",
+			"capital": "Montgomery",
+			"population": 5024279,
+			"area": 52420,
+			"total_cost_of_living": "$33,654",
+			"total_cost_of_living_ranking": 48,
+			"total_disposable_income": "$19,739",
+			"disposable_income_ranking": 36
+	},
+	{
+			"name": "Alaska",
+			"capital": "Juneau",
+			"population": 733391,
+			"area": 663267,
+			"total_cost_of_living": "$48,670",
+			"total_cost_of_living_ranking": 6,
+			"total_disposable_income": "$21,219",
+			"disposable_income_ranking": 26
+	},
+	{
+			"name": "Arizona",
+			"capital": "Phoenix",
+			"population": 7151502,
+			"area": 113998,
+			"total_cost_of_living": "$39,856",
+			"total_cost_of_living_ranking": 24,
+			"total_disposable_income": "$23,190",
+			"disposable_income_ranking": 16
+	},
+	{
+			"name": "Arkansas",
+			"capital": "Little Rock",
+			"population": 3011524,
+			"area": 53179,
+			"total_cost_of_living": "$32,979",
+			"total_cost_of_living_ranking": 49,
+			"total_disposable_income": "$18,273",
+			"disposable_income_ranking": 43
+	},
+	{
+			"name": "California",
+			"capital": "Sacramento",
+			"population": 39538223,
+			"area": 163696,
+			"total_cost_of_living": "$53,171",
+			"total_cost_of_living_ranking": 3,
+			"total_disposable_income": "$23,790",
+			"disposable_income_ranking": 12
+	},
+	{
+			"name": "Colorado",
+			"capital": "Denver",
+			"population": 5773714,
+			"area": 104094,
+			"total_cost_of_living": "$45,931",
+			"total_cost_of_living_ranking": 11,
+			"total_disposable_income": "$26,038",
+			"disposable_income_ranking": 6
+	},
+	{
+			"name": "Connecticut",
+			"capital": "Hartford",
+			"population": 3605944,
+			"area": 5543,
+			"total_cost_of_living": "$46,912",
+			"total_cost_of_living_ranking": 9,
+			"total_disposable_income": "$26,825",
+			"disposable_income_ranking": 4
+	},
+	{
+			"name": "Delaware",
+			"capital": "Dover",
+			"population": 989948,
+			"area": 2489,
+			"total_cost_of_living": "$44,389",
+			"total_cost_of_living_ranking": 14,
+			"total_disposable_income": "$21,610",
+			"disposable_income_ranking": 24
+	},
+	{
+			"name": "Florida",
+			"capital": "Tallahassee",
+			"population": 21538187,
+			"area": 65758,
+			"total_cost_of_living": "$40,512",
+			"total_cost_of_living_ranking": 21,
+			"total_disposable_income": "$19,704",
+			"disposable_income_ranking": 37
+	},
+	{
+			"name": "Georgia",
+			"capital": "Atlanta",
+			"population": 10711908,
+			"area": 59425,
+			"total_cost_of_living": "$38,747",
+			"total_cost_of_living_ranking": 25,
+			"total_disposable_income": "$22,509",
+			"disposable_income_ranking": 19
+	},
+	{
+			"name": "Hawaii",
+			"capital": "Honolulu",
+			"population": 1455271,
+			"area": 10932,
+			"total_cost_of_living": "$55,491",
+			"total_cost_of_living_ranking": 1,
+			"total_disposable_income": "$9,551",
+			"disposable_income_ranking": 50
+	},
+	{
+			"name": "Idaho",
+			"capital": "Boise",
+			"population": 1839106,
+			"area": 83569,
+			"total_cost_of_living": "$37,658",
+			"total_cost_of_living_ranking": 26,
+			"total_disposable_income": "$17,982",
+			"disposable_income_ranking": 44
+	},
+	{
+			"name": "Illinois",
+			"capital": "Springfield",
+			"population": 12812508,
+			"area": 57914,
+			"total_cost_of_living": "$41,395",
+			"total_cost_of_living_ranking": 19,
+			"total_disposable_income": "$25,726",
+			"disposable_income_ranking": 7
+	},
+	{
+			"name": "Indiana",
+			"capital": "Indianapolis",
+			"population": 6785528,
+			"area": 36420,
+			"total_cost_of_living": "$36,207",
+			"total_cost_of_living_ranking": 35,
+			"total_disposable_income": "$20,202",
+			"disposable_income_ranking": 34
+	},
+	{
+			"name": "Iowa",
+			"capital": "Des Moines",
+			"population": 3190369,
+			"area": 56273,
+			"total_cost_of_living": "$35,871",
+			"total_cost_of_living_ranking": 37,
+			"total_disposable_income": "$20,539",
+			"disposable_income_ranking": 29
+	},
+	{
+			"name": "Kansas",
+			"capital": "Topeka",
+			"population": 2937880,
+			"area": 82278,
+			"total_cost_of_living": "$35,185",
+			"total_cost_of_living_ranking": 42,
+			"total_disposable_income": "$21,079",
+			"disposable_income_ranking": 27
+	},
+	{
+			"name": "Kentucky",
+			"capital": "Frankfort",
+			"population": 4505836,
+			"area": 40408,
+			"total_cost_of_living": "$35,508",
+			"total_cost_of_living_ranking": 40,
+			"total_disposable_income": "$18,510",
+			"disposable_income_ranking": 42
+	},
+	{
+			"name": "Louisiana",
+			"capital": "Baton Rouge",
+			"population": 4657757,
+			"area": 52378,
+			"total_cost_of_living": "$35,576",
+			"total_cost_of_living_ranking": 39,
+			"total_disposable_income": "$17,859",
+			"disposable_income_ranking": 45
+	},
+	{
+			"name": "Maine",
+			"capital": "Augusta",
+			"population": 1362359,
+			"area": 35380,
+			"total_cost_of_living": "$39,899",
+			"total_cost_of_living_ranking": 23,
+			"total_disposable_income": "$20,109",
+			"disposable_income_ranking": 35
+	},
+	{
+			"name": "Maryland",
+			"capital": "Annapolis",
+			"population": 6177224,
+			"area": 12406,
+			"total_cost_of_living": "$48,235",
+			"total_cost_of_living_ranking": 7,
+			"total_disposable_income": "$25,397",
+			"disposable_income_ranking": 8
+	},
+	{
+			"name": "Massachusetts",
+			"capital": "Boston",
+			"population": 7029917,
+			"area": 10554,
+			"total_cost_of_living": "$53,860",
+			"total_cost_of_living_ranking": 2,
+			"total_disposable_income": "$26,470",
+			"disposable_income_ranking": 5
+	},
+	{
+			"name": "Michigan",
+			"capital": "Lansing",
+			"population": 10077331,
+			"area": 96714,
+			"total_cost_of_living": "$37,111",
+			"total_cost_of_living_ranking": 32,
+			"total_disposable_income": "$23,479",
+			"disposable_income_ranking": 14
+	},
+	{
+			"name": "Minnesota",
+			"capital": "Saint Paul",
+			"population": 5706494,
+			"area": 86936,
+			"total_cost_of_living": "$41,498",
+			"total_cost_of_living_ranking": 18,
+			"total_disposable_income": "$25,208",
+			"disposable_income_ranking": 9
+	},
+	{
+			"name": "Mississippi",
+			"capital": "Jackson",
+			"population": 2961279,
+			"area": 48432,
+			"total_cost_of_living": "$32,336",
+			"total_cost_of_living_ranking": 50,
+			"total_disposable_income": "$15,233",
+			"disposable_income_ranking": 49
+	},
+	{
+			"name": "Missouri",
+			"capital": "Jefferson City",
+			"population": 6154913,
+			"area": 69707,
+			"total_cost_of_living": "$35,338",
+			"total_cost_of_living_ranking": 41,
+			"total_disposable_income": "$22,237",
+			"disposable_income_ranking": 20
+	},
+	{
+			"name": "Montana",
+			"capital": "Helena",
+			"population": 1084225,
+			"area": 147040,
+			"total_cost_of_living": "$37,328",
+			"total_cost_of_living_ranking": 31,
+			"total_disposable_income": "$18,582",
+			"disposable_income_ranking": 41
+	},
+	{
+			"name": "Nebraska",
+			"capital": "Lincoln",
+			"population": 1961504,
+			"area": 77348,
+			"total_cost_of_living": "$37,519",
+			"total_cost_of_living_ranking": 29,
+			"total_disposable_income": "$20,555",
+			"disposable_income_ranking": 28
+	},
+	{
+			"name": "Nevada",
+			"capital": "Carson City",
+			"population": 3104614,
+			"area": 110572,
+			"total_cost_of_living": "$41,630",
+			"total_cost_of_living_ranking": 17,
+			"total_disposable_income": "$17,277",
+			"disposable_income_ranking": 47
+	},
+	{
+			"name": "New Hampshire",
+			"capital": "Concord",
+			"population": 1377529,
+			"area": 9349,
+			"total_cost_of_living": "$45,575",
+			"total_cost_of_living_ranking": 12,
+			"total_disposable_income": "$20,527",
+			"disposable_income_ranking": 30
+	},
+	{
+			"name": "New Jersey",
+			"capital": "Trenton",
+			"population": 9288994,
+			"area": 8723,
+			"total_cost_of_living": "$49,511",
+			"total_cost_of_living_ranking": 5,
+			"total_disposable_income": "$24,474",
+			"disposable_income_ranking": 10
+	},
+	{
+			"name": "New Mexico",
+			"capital": "Santa Fe",
+			"population": 2117522,
+			"area": 121590,
+			"total_cost_of_living": "$34,501",
+			"total_cost_of_living_ranking": 46,
+			"total_disposable_income": "$23,012",
+			"disposable_income_ranking": 18
+	},
+	{
+			"name": "New York",
+			"capital": "Albany",
+			"population": 20201249,
+			"area": 54555,
+			"total_cost_of_living": "$49,623",
+			"total_cost_of_living_ranking": 4,
+			"total_disposable_income": "$29,001",
+			"disposable_income_ranking": 2
+	},
+	{
+			"name": "North Carolina",
+			"capital": "Raleigh",
+			"population": 10439388,
+			"area": 53819,
+			"total_cost_of_living": "$36,702",
+			"total_cost_of_living_ranking": 34,
+			"total_disposable_income": "$23,014",
+			"disposable_income_ranking": 17
+	},
+	{
+			"name": "North Dakota",
+			"capital": "Bismarck",
+			"population": 779094,
+			"area": 70698,
+			"total_cost_of_living": "$35,707",
+			"total_cost_of_living_ranking": 38,
+			"total_disposable_income": "$23,345",
+			"disposable_income_ranking": 15
+	},
+	{
+			"name": "Ohio",
+			"capital": "Columbus",
+			"population": 11799448,
+			"area": 44826,
+			"total_cost_of_living": "$35,932",
+			"total_cost_of_living_ranking": 36,
+			"total_disposable_income": "$23,951",
+			"disposable_income_ranking": 11
+	},
+	{
+			"name": "Oklahoma",
+			"capital": "Oklahoma City",
+			"population": 3959353,
+			"area": 69899,
+			"total_cost_of_living": "$33,966",
+			"total_cost_of_living_ranking": 47,
+			"total_disposable_income": "$19,489",
+			"disposable_income_ranking": 38
+	},
+	{
+			"name": "Oregon",
+			"capital": "Salem",
+			"population": 4237256,
+			"area": 98379,
+			"total_cost_of_living": "$46,193",
+			"total_cost_of_living_ranking": 10,
+			"total_disposable_income": "$20,512",
+			"disposable_income_ranking": 31
+	},
+	{
+			"name": "Pennsylvania",
+			"capital": "Harrisburg",
+			"population": 13002700,
+			"area": 46054,
+			"total_cost_of_living": "$40,066",
+			"total_cost_of_living_ranking": 22,
+			"total_disposable_income": "$21,856",
+			"disposable_income_ranking": 23
+	},
+	{
+			"name": "Rhode Island",
+			"capital": "Providence",
+			"population": 1097379,
+			"area": 1545,
+			"total_cost_of_living": "$44,481",
+			"total_cost_of_living_ranking": 13,
+			"total_disposable_income": "$22,120",
+			"disposable_income_ranking": 22
+	},
+	{
+			"name": "South Carolina",
+			"capital": "Columbia",
+			"population": 5118425,
+			"area": 32020,
+			"total_cost_of_living": "$34,826",
+			"total_cost_of_living_ranking": 44,
+			"total_disposable_income": "$19,420",
+			"disposable_income_ranking": 39
+	},
+	{
+			"name": "South Dakota",
+			"capital": "Pierre",
+			"population": 886667,
+			"area": 77116,
+			"total_cost_of_living": "$36,864",
+			"total_cost_of_living_ranking": 33,
+			"total_disposable_income": "$16,363",
+			"disposable_income_ranking": 48
+	},
+	{
+			"name": "Tennessee",
+			"capital": "Nashville",
+			"population": 6910840,
+			"area": 42144,
+			"total_cost_of_living": "$34,742",
+			"total_cost_of_living_ranking": 45,
+			"total_disposable_income": "$21,293",
+			"disposable_income_ranking": 25
+	},
+	{
+			"name": "Texas",
+			"capital": "Austin",
+			"population": 29145505,
+			"area": 268596,
+			"total_cost_of_living": "$37,582",
+			"total_cost_of_living_ranking": 27,
+			"total_disposable_income": "$23,653",
+			"disposable_income_ranking": 13
+	},
+	{
+			"name": "Utah",
+			"capital": "Salt Lake City",
+			"population": 3271616,
+			"area": 84897,
+			"total_cost_of_living": "$40,586",
+			"total_cost_of_living_ranking": 20,
+			"total_disposable_income": "$20,483",
+			"disposable_income_ranking": 32
+	},
+	{
+			"name": "Vermont",
+			"capital": "Montpelier",
+			"population": 643077,
+			"area": 9616,
+			"total_cost_of_living": "$43,927",
+			"total_cost_of_living_ranking": 15,
+			"total_disposable_income": "$18,848",
+			"disposable_income_ranking": 40
+	},
+	{
+			"name": "Virginia",
+			"capital": "Richmond",
+			"population": 8631393,
+			"area": 42775,
+			"total_cost_of_living": "$43,067",
+			"total_cost_of_living_ranking": 16,
+			"total_disposable_income": "$26,987",
+			"disposable_income_ranking": 3
+	},
+	{
+			"name": "Washington",
+			"capital": "Olympia",
+			"population": 7693612,
+			"area": 71298,
+			"total_cost_of_living": "$47,231",
+			"total_cost_of_living_ranking": 8,
+			"total_disposable_income": "$30,894",
+			"disposable_income_ranking": 1
+	},
+	{
+			"name": "West Virginia",
+			"capital": "Charleston",
+			"population": 1793716,
+			"area": 24230,
+			"total_cost_of_living": "$34,861",
+			"total_cost_of_living_ranking": 43,
+			"total_disposable_income": "$17,346",
+			"disposable_income_ranking": 46
+	},
+	{
+			"name": "Wisconsin",
+			"capital": "Madison",
+			"population": 5893718,
+			"area": 65496,
+			"total_cost_of_living": "$37,374",
+			"total_cost_of_living_ranking": 30,
+			"total_disposable_income": "$22,135",
+			"disposable_income_ranking": 21
+	},
+	{
+			"name": "Wyoming",
+			"capital": "Cheyenne",
+			"population": 576851,
+			"area": 97813,
+			"total_cost_of_living": "$37,550",
+			"total_cost_of_living_ranking": 28,
+			"total_disposable_income": "$20,377",
+			"disposable_income_ranking": 33
+	}
+]

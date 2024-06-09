@@ -21,16 +21,77 @@ a {
 	box-sizing: border-box; 
 }
 
-.reddit-mono-light {
+/* .reddit-mono-light {
   font-family: "Reddit Mono", monospace;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 
+.lora-light {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+.teko-bold {
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+  }
+
 body {
-    font-family: "Reddit Mono", monospace;
+    font-family:'Times New Roman', Times, serif;
     background-color: #F1FFFB;
+}
+
+#bigText {
+    position: relative;
+    top: 170px;
+    font-size: 20pt;
+    color: #272727;
+    margin: auto;
+    text-align: center;
+}
+
+.title {
+    position: relative;
+    top: 10px;
+    font-size: 80pt;
+    color: #272727;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-family: "Teko", sans-serif;
+    font-weight: 100;
+}
+
+#clock {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20pt;
+}
+
+#dateDisplay {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 20pt;
+}
+
+.information {
+    text-align: left;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.stats {
+
 }
 
 .There {
@@ -44,16 +105,6 @@ body {
 
 }
 
-header {
-    position: relative;
-    top: 100px;
-    font-size: 25pt;
-    color: #272727;
-    width: 80%;
-    margin: auto;
-    text-align: center;
-}
-
 svg {
     margin: auto;
     display: block;
@@ -65,9 +116,10 @@ section {
     top: 200px;
     font-size: 25pt;
     color: #272727;
-    width: 60%;
+    width: 80%;
     margin: auto;
     text-align: center;
+    font-family:'Times New Roman', Times, serif
 }
 
 .continue {
@@ -88,5 +140,7 @@ section {
     left: 400px;
     bottom: 50px;
 }
+
+
 
 
