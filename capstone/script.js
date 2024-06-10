@@ -44,46 +44,64 @@
 
     link1.addEventListener("click", function(event) {
         event.preventDefault();
-        document.getElementById("bigText").innerHTML = `<h1> Where can YOU live comfortably? </h1> `;
-        document.getElementById("content").innerHTML = 
-        `<section>
+        document.getElementById("textsection").innerHTML = `
+        <h1> Where can YOU live? </h1>
+        <p>As of 2024, the state with the lowest cost of living is Mississippi with $32,336, and the state with the highest is Hawaii at $55,491. Choices for income range will be available accordingly.</p>
         <form>
         <label for="cars">Choose an income range:</label>
         <select name="income" id="income">
-          <option value="veryLow">veryLow</option>
-          <option value="low">low</option>
-          <option value="medium">medium</option>
-          <option value="high">high</option>
+          <option value="$32,336-$35,000">$32,336-$35,000</option>
+          <option value="$35,000-$40,000">$35,000-$40,000</option>
+          <option value="$40,000-$45,000">$40,000-$45,000</option>
+          <option value="$45,000-$55,491">$45,000-$55,491</option>
         </select>
         <br><br>
         <input type="submit" value="Submit">
         </form>
-        </section>
         `;
         document.querySelector('form').addEventListener('submit', function(event){
             event.preventDefault();
             const choice = document.querySelector('#income').value;
-            if (choice == 'veryLow') {
-                statesToColor = ['California', 'Florida'];
+            if (choice == '$32,336-$35,000') {
+                statesToColor = ['Mississippi','Arkansas','Alabama','Oklahoma','New Mexico','Tennessee','South Carolina','West Virginia'];
                 updateStateColors();
                 console.log(statesToColor);
-            } else if (choice == 'low') {
-                statesToColor.push('Alabama');
+            } else if (choice == '$35,000-$40,000') {
+                statesToColor = ['Mississippi','Arkansas','Alabama','Oklahoma','New Mexico','Tennessee','South Carolina','West Virginia','Kansas','Missouri','Kentucky','Louisiana','North Dakota','Iowa','Ohio','Indiana','North Carolina','South Dakota','Michigan','Montana','Wisconsin','Nebraska','Wyoming','Texas','Idaho','Georgia','Arizona','Maine'];
                 updateStateColors();
-            } else if (choice == 'medium') {
-                statesToColor.push('Utah');
+                console.log(statesToColor);
+            } else if (choice == '$40,000-$45,000') {
+                statesToColor = ['Mississippi','Arkansas','Alabama','Oklahoma','New Mexico','Tennessee','South Carolina','West Virginia','Kansas','Missouri','Kentucky','Louisiana','North Dakota','Iowa','Ohio','Indiana','North Carolina','South Dakota','Michigan','Montana','Wisconsin','Nebraska','Wyoming','Texas','Idaho','Georgia','Arizona','Maine','Pennsylvania','Florida','Utah','Illinois','Minnesota','Nevada','Virginia','Vermont','Delaware','Rhode Island'];
                 updateStateColors();
+                console.log(statesToColor);
             } else {
-                statesToColor.push('Colorado');
+                statesToColor = ['Mississippi','Arkansas','Alabama','Oklahoma','New Mexico','Tennessee','South Carolina','West Virginia','Kansas','Missouri','Kentucky','Louisiana','North Dakota','Iowa','Ohio','Indiana','North Carolina','South Dakota','Michigan','Montana','Wisconsin','Nebraska','Wyoming','Texas','Idaho','Georgia','Arizona','Maine','Pennsylvania','Florida','Utah','Illinois','Minnesota','Nevada','Virginia','Vermont','Delaware','Rhode Island','New Hampshire','Colorado','Oregon','Connecticut','Washington','Maryland','Alaska','New Jersey','New York','California','Massachusetts','Hawaii'];
                 updateStateColors();
+                console.log(statesToColor);
             }
-            document.getElementById("bigText").innerHTML = `
-            <div>
-            <p>Click on the states for more information. <br> Press ESC to reset zoom. <br> Highlighted states are where you can live comfortably.</p>
-            <p>Your Income Range: <br> <b>$30,000-$50,000</b></p>
+            document.getElementById("textsection").innerHTML = ``;
+            document.querySelector("header").innerHTML = `
+            <div id="dateDisplay"><span id="currentDate"></span></div>
+            <h1 class="finalheader">INTERACTIVE MAP</h1>
+            <div id="clock"><span id="currentTime"></span></div>
+            `;
+            document.getElementById("topmapinfo").innerHTML = `
+            <div id="maplegend">
+            <p>Click on the states for more information. <br> 
+            Press ESC to reset zoom. <br> 
+            Highlighted states are within the income range you selected.</p>
+            </div>
+
+            <div id="incomerange">
+            <p>Your Income Range: <br> <b>${choice}</b></p>
             </div>
             `;
-            document.getElementById("content").innerHTML = ``;
+            document.getElementById("mapinfo").innerHTML = `
+            <div id="state-info" height>
+                choose a state to view information!
+            </div>
+            `;
+            document.getElementById("mapinfo").style.height = '610px';
             document.getElementById("observablehq-chart-0997c195").classList.remove('notThere');
             document.getElementById("observablehq-chart-0997c195").classList.add('There');
         });

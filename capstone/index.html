@@ -32,37 +32,48 @@
 </head>
 <body>
 
+    <!-- Display date & time -->
     <header>
         <div id="dateDisplay"><span id="currentDate"></span></div>
         <div id="clock"><span id="currentTime"></span></div>
     </header>
 
-    <div id="bigText">
-        <h1 class="title">US COST OF LIVING INTERACTIVE MAP</h1>
-    </div>
+    <main>
 
-    <div id="content">
+        <!-- Display map, legend, and information -->
+        <div class="mapsection">
 
-        <section>
+            <div id="topmapinfo"></div>
+
+            <div id="interactivemap">
+                <div class="notThere" id="observablehq-chart-0997c195"></div>
+    
+                <div id="mapinfo"></div>
+            </div>
+
+        </div>
+
+        <!-- Display introduction slide & form -->
+        <div id="textsection">
+
+            <h1 class="title">US COST OF LIVING INTERACTIVE MAP</h1>
+
             <div class="information">
                 <p>The rising cost of living remains a prominent concern across the U.S., with surveys showing that Americans rank inflation as one of the top problems facing the country.</p>
-                <p>As prices continue to soar in nearly every aspect of life—from groceries to transportation to housing—it seems sticky inflation has a hand in everything</p>
+                <p>As prices continue to soar in nearly every aspect of life—from groceries to transportation to housing—it seems sticky inflation has a hand in everything.</p>
             </div>
-
+    
             <div class="stats">
-                <p>Single Person's Average Income: 38,266/yr</p>
-                <p>Family of Four Average Income: 85,139/yr</p>
+                <p>Single Person's Average Income as of 2024: 38,266/yr</p>
             </div>
-
+    
             <a class="continue" id="link1" href="#">continue <i class="fas fa-arrow-right"></i></a>
-        </section>
 
-    </div>
+        </div>
 
-    <div id="state-info"></div>
-    <div class="notThere" id="observablehq-chart-0997c195">
+    </main>
 
-    </div>
+
 
 </body>
 </html>
