@@ -47,6 +47,12 @@
         document.getElementById("textsection").innerHTML = `
         <h1> Where can YOU live? </h1>
         <p>As of 2024, the state with the lowest cost of living is Mississippi with $32,336, and the state with the highest is Hawaii at $55,491. Choices for income range will be available accordingly.</p>
+        <p>
+        While cost of living is essential when deciding where to set down roots, you will likely want to balance the lure of affordability with what you require to enjoy your life on a day-to-day basis. For example, a location with a lower cost of living does not always equate with a better quality of life.
+        </p>
+        <p>
+        Even so, getting a sense of how much money you’ll have left in your pocket after shelling out for essentials can help direct your attention to places more likely to fit your affordability requirements and lifestyle needs.
+        </p>
         <form>
         <label for="cars">Choose an income range:</label>
         <select name="income" id="income">
@@ -80,6 +86,7 @@
                 console.log(statesToColor);
             }
             document.getElementById("textsection").innerHTML = ``;
+            document.getElementById("background").innerHTML = ``;
             document.querySelector("header").innerHTML = `
             <div id="dateDisplay"><span id="currentDate"></span></div>
             <h1 class="finalheader">INTERACTIVE MAP</h1>

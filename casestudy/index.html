@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Case Study Template - put your title here</title>
+
+    <!--/ /-------- Normalize CSS --------/ /-->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+	
+	<!--/ /-------- Google Fonts --------/ /-->
+    <!-- add any google fonts you want to use -->
+	
+	<!--/ /-------- Font Awesome --------/ /-->
+    <!--Add this if you want icons from font awesome
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">-->
+	
+	<!--/ /-------- Your Styles --------/ /-->
+	<link href="styles.css" rel="stylesheet">
+	
+	<!--/ /-------- Needed For Mobile Devices --------/ /-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <header id="top">
+        <div class="container">
+            <h1>U.S. Cost of Living Interactive Map Case Study</h1>
+            <p>Joshua Gerhardt</p>
+            <address>&#106;&#108;&#103;&#101;&#114;&#104;&#097;&#114;&#100;&#116;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;</address>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#overview">OVERVIEW</a></li>
+            <li><a href="#research">RESEARCH</a></li>
+            <li><a href="#design">DESIGN</a></li>
+            <li><a href="#ui">USER INTERFACE</a></li>
+            <li><a href="#revisions">REVISIONS</a></li>
+            <li><a href="#summary">SUMMARY</a></li>
+        </ul>
+    </nav>
+
+    <!--/ /-------- Overview Section --------/ /-->
+    <section id="overview">
+        <div class="container">
+            <h2>Project Overview</h2>
+            <img src="images/header.png">
+            <div class="content">
+                <p>The goal of this project was to create a tool to assist young Americans in facing one of the top problems in the country. While all of the information is readily available online, searching through spreadsheets of data is not the average American's preferred medium of media consumption in 2024.</p>
+
+                <p></p>
+                    
+                <p>The interactive map makes exploring the countries states based on cost of living incredibly easy. Other useful information surrounding the topic of cost according to state is provived, as well as other basic knowledge about the state.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--/ /-------- UX Research Section --------/ /-->
+    <section id="research">
+        <div class="container">
+            <h2>Project Research</h2>
+            <div class="content">
+                <p>I started the project by searching for databases online. Although there is much online about cost of living calculators and generalizations about where it is the cheapest or most expensive to live, most of the data I am using comes from a singular <a href="https://www.forbes.com/advisor/mortgages/cost-of-living-by-state/">Forbes</a> article. The article contains data sources such as C2ER, KFF, MIT Living Wage Calculator and the U.S. Census Bureau. The calculations they used to determine the cost of living for each state are simple and concise, making applying them to the project much easier. </p>
+
+                <p>It is worth mentioning that there are other interactive maps online currently, however they do not display the same data, and are oftentimes embedded in websites with lackluster UI/UX. I wanted to seperate my project from these already existing interactive maps, with pleasing UI/UX and relevant data.</p>
+
+                <img src="images/forbes.png">
+            </div>
+        </div>
+    </section>
+
+    <!--/ /-------- Design Section --------/ /-->
+    <section id="design">
+        <div class="container">
+            <h2>Visual Design</h2>
+            <div class="content">
+                <img src="images/visual.png">
+                <p>Visual design was an integral part of the process. This aspect is what seperated the project from what already exists. I also personally take much pride in the visual design aspect of the project. For this particular project, I wanted to keep the aesthetic and theme very nuetral. It was meant to appeal to the average American, which could be a lot of different people. </p>
+
+                <p>Like most of my designs, I sought to keep the design functional, welcoming, and straightforward. While I believe it is important to create a narrative surrouding the project for audience engagment, I also believe that it is incredibly easy in this day and age for the narrative to do the exact oppposite of its intention. Too much text or required attention for a longer period of time could lose the interest of the user very quickly. </p>
+            </div>
+        </div>
+    </section>
+
+    <!--/ /-------- UI Section --------/ /-->
+    <section id="ui">
+        <div class="container">
+            <h2>User Interface</h2>
+            <div class="content">
+                <div class="column">
+                    <p>The intial idea for my capstone project was actually a compound interest calculator that would demonstrate the power of compound interest in an ineresting way. This idea quickly fell through as I found an interactive map library that was far more interesting than any of the data tables I planned on using prior.</p>
+
+                    <p>Tackling with D3 library took the most time out of everything in the project. Because of the specific features I had in mind to keep the project interactive, I had to dive deeply into the code of the library. Thanks to much help from professor Mead, Abrar, and chatGPT, we were able to place the files and API inside the project locally, allowing me to directly interact with the libraries contents.</p>
+                </div>
+
+                <div class="column">
+                    <p>The final project would have three different final slides containing an introduction, form submission, and the interactive map.</p>
+
+                    <ol>
+                        <li>Introduction: contains intro to narrative and a few imporatant statistics.</li>
+                        <li>Form Submission: additional engaging narrative and statistics, and a form submission for the user to alter the ineractive map according to their choice.</li>
+                        <li>Interactive Map: displays information on chosen state and chosen submission prior.</li>
+                    </ol>
+                </div>
+                <div>
+                    <img src="images/UI.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--/ /-------- Revisions Section --------/ /-->
+    <section id="revisions">
+        <div class="container">
+            <h2>Revisions</h2>
+            <div class="content">
+                <p>Most of my revisions were made after the user testing. Thankfully, most of the revisions made were planned for, I just needed user input on a few ideas that I was not sure were as effective as I was projecting them to be.</p>
+
+
+
+                <div class="column">
+                    <p>I covered three main areas for revision:</p>
+
+                    <ol>
+                        <li>Navigation: User noted a desire to have some sort of return navigation once on the final slide in order to test the other categories.</li>
+                        <li>Aesthetics: The intial color palette I had chosen could have possible impications of politics, which I had to remove in order to stay nuetral.</li>
+                        <li>Hierarchy of Information: The first order of information I had displayed the final slide was to test which information the user was drawn to first, it was changed accordingly.</li>
+                    </ol>
+                </div>
+
+                <img src="images/revision.png">
+            </div>
+        </div>
+    </section>
+
+    <!--/ /-------- Summary Section --------/ /-->
+    <section id="summary">
+        <div class="container">
+            <h2>Summary</h2>
+            <div class="content">
+                <p>Overall, I believe I was able to achieve what I had set out to accomplish. There some areas where the quality could have used more time to prepare for the final iteration, but I think they are smaller details that only I would notice.When working with libraries in the future, especially from D3, I learned to ask chatGPT for help more than you think is necessary. </p>
+
+                <p>Because of different API's or other plug-ins the library might use, attempting to dechipher the code yourself is pointless. Just rely on machine learning. I believe that Professor Mead and anyone who helped me create the project would agree.</p>
+
+                <p>For my final digital project at Davis, I think it could have gone a lot worse. Thanks to all who helped.</p>
+            </div>
+            <img src="images/summary.png">
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>U.S. Cost of Living Interactive Map Case Study</p>
+            <p>Joshua Gerhardt</p>
+            <address>&#106;&#108;&#103;&#101;&#114;&#104;&#097;&#114;&#100;&#116;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;</address>
+            <p><a href="#top">top</a></p>
+        </div>
+    </footer>
+    
+</body>
+</html>

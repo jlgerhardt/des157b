@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
     updateStateColors = function() {
       states.each(function(d) {
         if (statesToColor.includes(d.properties.name)) {
-          d3.select(this).style('fill', 'red'); // Change the fill color
+          d3.select(this).style('fill', '#eb5160'); // Change the fill color
         }
       });
     }
@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", function() {
       console.log(`State clicked: ${d.properties.name}`);
       displayStateInfo(d.properties.name);
       // states.transition().style('fill', null);
-      d3.select(this).transition().style('fill', 'blue');
+      d3.select(this).transition().style('fill', '#44633f');
       svg.transition().duration(750).call(
         zoom.transform,
         d3.zoomIdentity

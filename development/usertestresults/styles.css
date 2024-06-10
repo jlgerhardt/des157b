@@ -1,0 +1,150 @@
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  .dm-mono-light {
+    font-family: "DM Mono", monospace;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .dm-mono-regular {
+    font-family: "DM Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .dm-mono-medium {
+    font-family: "DM Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+
+body {
+    font-family: "DM Mono", monospace;
+    margin: 0px;
+    padding: 0px;
+    background-color:rgb(65, 65, 65);
+    transition: .5s;
+    color: #f0f0f0;
+}
+
+body.switch {
+    background-color: #f0f0f0;
+    color: black;
+}
+
+header {
+    padding: 20px;
+    font-family: "DM Mono", monospace;
+}
+
+p, h3 {
+    padding: 20px;
+    width: 90%;
+}
+
+h1 {
+    font-weight: 500;
+}
+
+h3 {
+    font-weight: 550;
+}
+
+#circle {
+    position: relative;
+    bottom: 10px;
+    font-size: 12pt;
+    color: red;
+
+}
+
+#link {
+    font-size: 9pt;
+}
+
+input:active {
+    background-color: none;
+}
+
+button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px;
+    background-color: #f0f0f0;
+    color: rgb(65, 65, 65);
+    border: 1px solid transparent;
+    border-radius: 2px;
+    transition: .3s;
+}
+
+img {
+    padding: 20px;
+}
+
+button:hover {
+    background-color: #c2c2c2;
+    cursor: pointer;
+}
+
+button.switch {
+    background-color: rgb(65, 65, 65);
+    color: #f0f0f0;
+}
+
+button.switch:hover {
+    background-color: #252525;
+    color: #f0f0f0
+}
+
+section {
+    color: #f0f0f0;
+    transition: .5s;
+}
+
+section a {
+    color: #f0f0f0;
+}
+
+section.switch {
+    color: black;
+}
+
+section.switch a{
+    color: black;
+}
