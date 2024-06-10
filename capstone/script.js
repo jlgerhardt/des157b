@@ -46,13 +46,23 @@
         event.preventDefault();
         document.getElementById("textsection").innerHTML = `
         <h1> Where can YOU live? </h1>
-        <p>As of 2024, the state with the lowest cost of living is Mississippi with $32,336, and the state with the highest is Hawaii at $55,491. Choices for income range will be available accordingly.</p>
-        <p>
-        While cost of living is essential when deciding where to set down roots, you will likely want to balance the lure of affordability with what you require to enjoy your life on a day-to-day basis. For example, a location with a lower cost of living does not always equate with a better quality of life.
+
+        <p class="bodytext">
+        While cost of living is essential when deciding where to set down roots, you will likely want to balance the lure of affordability with what you require to enjoy your life on a day-to-day basis. A location with a lower cost of living does not always equate with a better quality of life.
         </p>
-        <p>
+
+        <p class="bodytext">
         Even so, getting a sense of how much money you’ll have left in your pocket after shelling out for essentials can help direct your attention to places more likely to fit your affordability requirements and lifestyle needs.
         </p>
+
+        <p class="bodytext">Important information to note:</p>
+
+        <ul>
+            <li>the lowest cost of living is Mississippi with $32,336</li>
+            <li>the highest cost of living is Hawaii at $55,491</li>
+            <li>Single Person's Average Income as of 2024: $38,266/yr</li>
+        </ul>
+
         <form>
         <label for="cars">Choose an income range:</label>
         <select name="income" id="income">
@@ -89,28 +99,34 @@
             document.getElementById("background").innerHTML = ``;
             document.querySelector("header").innerHTML = `
             <div id="dateDisplay"><span id="currentDate"></span></div>
-            <h1 class="finalheader">INTERACTIVE MAP</h1>
+            <h1 id="finalheader" class="finalheader">INTERACTIVE MAP</h1>
             <div id="clock"><span id="currentTime"></span></div>
             `;
             document.getElementById("topmapinfo").innerHTML = `
             <div id="maplegend">
-            <p>Click on the states for more information. <br> 
-            Press ESC to reset zoom. <br> 
-            Highlighted states are within the income range you selected.</p>
+            <p>
+            Press 'ESC' to reset. <br> 
+            Scroll to zoom. <br>
+            Click header to restart. <br>
+            Highlighted states are within the income range you selected. <br>
+            </p>
             </div>
 
             <div id="incomerange">
-            <p>Your Income Range: <br> <b>${choice}</b></p>
+            <p>Selected Income Range: <br> <b>${choice}</b></p>
             </div>
             `;
             document.getElementById("mapinfo").innerHTML = `
             <div id="state-info" height>
-                choose a state to view information!
+                click a state to view information!
             </div>
             `;
             document.getElementById("mapinfo").style.height = '610px';
             document.getElementById("observablehq-chart-0997c195").classList.remove('notThere');
             document.getElementById("observablehq-chart-0997c195").classList.add('There');
+            document.getElementById("finalheader").addEventListener('click', function (){
+                location.reload();
+            });
         });
     });
 

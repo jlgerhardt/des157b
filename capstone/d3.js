@@ -144,33 +144,26 @@ document.addEventListener("DOMContentLoaded", function() {
           const infoDiv = document.getElementById('state-info');
           infoDiv.innerHTML = `
               <div class="state-info">
-              
-              <strong>${state.name} Information</strong><br>
 
               <section>
-              <p>
-              -General Information<br>
+              <h2>${state.name}</h2>
               Capital: ${state.capital}<br>
               Population: ${state.population}<br>
-              Area: ${state.area}<br>
-              </p>
               </section>
-
+              
               <section>
               <p>
-              -Major Cost Information<br>
               Cost of Living: ${state.total_cost_of_living}(#${state.total_cost_of_living_ranking})<br>
-              Disposable Income: ${state.total_disposable_income}(#${state.disposable_income_ranking})<br>
               Annual Avg Wage: ${state.annual_average_wage}(#${state.wage_rank})<br>
+              Disposable Income: ${state.total_disposable_income}(#${state.disposable_income_ranking})<br>
               </p>
               </section>
 
               <section>
               <p>
-              -Additional Cost Information<br>
               Avg Rent: ${state.average_rent}(#${state.rent_rank})<br>
-              Food: ${state.food}<br>
-              Avg Transportation Cost: ${state.average_transportation_cost}(#${state.transportation_rank})<br>
+              Avg Food: ${state.food}<br>
+              Avg Transit Cost: ${state.average_transportation_cost}(#${state.transportation_rank})<br>
               </p>
               </section>
 

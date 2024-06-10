@@ -50,11 +50,12 @@ body {
 .backgroundimg {
     z-index: 0;
     margin: 0;
-    position: absolute;
-    top: 40%;
+    position: fixed;
+    top: 43%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 
 #bigText {
     position: relative;
@@ -98,6 +99,13 @@ body {
     top: 35px;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-family: "Teko", sans-serif;
+    font-weight: normal;
+    padding: 20px;
+}
+
+.finalheader:hover {
+    cursor: pointer;
 }
 
 .information {
@@ -106,6 +114,17 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+footer {
+    background-color: #44633f;
+    width: 100%;
+    margin: auto;
+    position: fixed;
+    bottom: 0px;
+    padding: 10px;
+    color: #f5fff0;
+    z-index: 2;
 }
 
 .There {
@@ -119,11 +138,24 @@ body {
 
 }
 
+.bodytext {
+    padding: 15px;
+    text-align: left;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+form {
+    padding: 20px;
+}
+
 #textsection {
     width: 80%;
     margin: auto;
     position: relative;
-    top: 100px;
+    top: 250px;
     font-size: 20pt;
     color: #272727;
     text-align: center;
@@ -152,7 +184,7 @@ input {
     background-color: #eb5160;
     padding: 5px;
     position: relative;
-    top: 50px;
+    top: 0px;
     display: block;
     width: 140px;
     margin: auto;
@@ -161,6 +193,10 @@ input {
     font-size: 19pt;
     transition: .3s ease-in;
     border: none;
+}
+
+input:hover {
+    background-color: rgb(143, 1, 1);
 }
 
 .label {
@@ -186,11 +222,10 @@ svg {
     /* border: 1px solid red; */
     border-radius: 5px;
     font-size: 15pt;
-    padding: 20px;
 }
 
 section {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 #interactivemap {
@@ -199,22 +234,45 @@ section {
     gap: 20px;
     align-items: flex-end;
     justify-content: center;
+    padding: 10px;
 }
 
 #topmapinfo {
-    width: 55vw;
+    width: 57vw;
     margin: auto;
     position: relative;
-    top: 50px;
+    top: 80px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+#incomerange {
+    font-size: 15pt;
+    background: #44633f;
+    padding: 10px;
+    border-radius: 5px;
+    color: #f5fff0;
+    text-align: center;
 }
 
 @media (max-width: 1440px) {
     #topmapinfo {
         padding: 20px 40px 0px 40px;
         width: 100vw;
+        top: 60px;
+    }
+
+    .backgroundimg {
+        top: 45%;
+    }
+
+    #textsection {
+        top: 100px;
+    }
+
+    .mapsection {
+        top: -10px;
     }
 
 
